@@ -18,8 +18,9 @@ with open('Pokemon.csv', 'r', encoding='utf-8') as arquivo:
     
     
     dataset = 'Pokemon.csv'
+    coluna = leitor.fieldnames
 
     print(f'Dataset: {dataset}')
     print(f'Quantidade de Registros: {contador}')
-    print(f'Nome das Colunas: {leitor.fieldnames}')
+    print(f'Nome das Colunas: {coluna}')
     print(f'5 Primeiros Registros: {reg}')

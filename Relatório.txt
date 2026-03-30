@@ -1,0 +1,4 @@
+Nome do Dataset usado: Pokemon.csv
+Descrição Breve: O dataset usado é sobre os Pokemons da 3° geração dos jogos de Pokemon.
+Quantidade de registros: 138
+Quantidade de colunas: ['#', 'Name', 'Type 1', 'Type 2', 'Total', 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Generation', 'Legendary']
