@@ -16,7 +16,7 @@ with open('Pokemon.csv', 'r', encoding='utf-8') as arquivo:
         dados.append([pin])
 
     
-    
+
     dataset = 'Pokemon.csv'
     coluna = leitor.fieldnames
 

@@ -5,6 +5,11 @@ contador2 = 0
 contador3 = 0
 contador4 = 0
 
+filtro1 = []
+filtro2 = []
+filtro3 = []
+
+
 with open('Pokemon.csv', 'r', encoding='utf-8') as arquivo:
     leitor = csv.DictReader(arquivo)
 
@@ -17,33 +22,36 @@ with open('Pokemon.csv', 'r', encoding='utf-8') as arquivo:
         if a == 'Ghost' and int(b) > 300:
             contador1 += 1
             print(f'{contador1}: {c}')
+            filtro1.append(c)
 
 with open('Pokemon.csv', 'r', encoding='utf-8') as arquivo:
     leitor = csv.DictReader(arquivo)
     
     print('Filtro 2: Pokemon com segundo tipo Ground com Defense maior que 60:')
     for linha in leitor:
-        a = linha['Type 2']
-        b = linha['Defense']
-        c = linha['Name']
+        d = linha['Type 2']
+        e = linha['Defense']
+        f = linha['Name']
 
-        if a == 'Ground' and int(b) > 60:
+        if d == 'Ground' and int(e) > 60:
             contador2 += 1
-            print(f'{contador2}: {c}')
+            print(f'{contador2}: {f}')
+            filtro2.append(f)
 
 with open('Pokemon.csv', 'r', encoding='utf-8') as arquivo:
     leitor = csv.DictReader(arquivo)
     
     print('Filtro 3: Pokemon com Total de Stats maior que 500 e com HP maior que 100:')
     for linha in leitor:
-        a = linha['Total']
-        b = linha['HP']
-        c = linha['Name']
+        g = linha['Total']
+        h = linha['HP']
+        i = linha['Name']
 
-        if int(a) > 500  and int(b) > 100:
+        if int(g) > 500  and int(h) > 100:
             contador3 += 1
-            print(f'{contador3}: {c}')
-
+            print(f'{contador3}: {i}')
+            filtro3.append(i)
+'''
 with open('Pokemon.csv', 'r', encoding='utf-8') as arquivo:
     leitor = csv.DictReader(arquivo)
     
@@ -66,3 +74,4 @@ with open('Pokemon.csv', 'r', encoding='utf-8') as arquivo:
             if a == filtro1 and int(b) < filtro3:
                 contador4 += 1
                 print(f'{contador4}: {c}')
+'''

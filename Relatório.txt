@@ -1,4 +1,35 @@
 Nome do Dataset usado: Pokemon.csv
 Descrição Breve: O dataset usado é sobre os Pokemons da 3° geração dos jogos de Pokemon.
+Ele contém informações sobre os atributos dos Pokemons, como Total de Stats, HP, Attack, Defense, Speed, entre outros.
+Também contém informações sobre os tipos dos Pokemons, como Type 1 e Type 2, e também seu número na Pokedex oficial.
+Essas informações podem ser usadas para realizar análises e encontrar Pokemons com características específicas, como os filtros aplicados na Parte 3.
+
 Quantidade de registros: 138
-Quantidade de colunas: ['#', 'Name', 'Type 1', 'Type 2', 'Total', 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Generation', 'Legendary']
+Quantidade de colunas: 13
+Nome das colunas: ['#', 'Name', 'Type 1', 'Type 2', 'Total', 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Generation', 'Legendary']
+
+Estatísticas da Parte 2:
+Máximo de Attack: 180
+Máximo de Speed: 180
+Mínimo de Attack: 15
+Mínimo de Speed: 10
+Média de Attack: 74.02
+Média de Speed: 63.03
+Quantidade de registros de Attack: 138
+Quantidade de registros de Speed: 138
+
+Estatísticas da Parte 3:
+Filtro 1: Pokemon Ghost com Total de Stats maior que 300:
+['Banette', 'Dusclops']
+Filtro 2: Pokemon com segundo tipo Ground com Defense maior que 60:
+['Marshtomp', 'Swampert', 'Nincada', 'Camerupt', 'Whiscash']
+Filtro 3: Pokemon com Total de Stats maior que 500 e com HP maior que 100:
+['Slaking', 'Walrein', 'Rayquaza']
+Filtro Interativo: O usuário pode aplicar filtros personalizados ao dataset.
+
+Conclusão: O dataset é bem completo, com muitas informações sobre os Pokemons da 3° geração. 
+Através dos filtros aplicados, foi possível encontrar Pokemons com características específicas, como os 
+únicos Pokemons com tipo Ghost e com Total de Stats maior que 300, sendo Banette e Dusclops.
+Também foi possível encontrar a média de Attack e Speed dos Pokemons, sendo 74.02 e 63.03, respectivamente.
+E também foi possível saber quantos Pokemons da 3° geração existem na Pokedex, sendo 138 registros. 
+O dataset é uma ótima fonte de informações para quem gosta de Pokemon e quer realizar análises sobre os Pokemons da 3° geração.
